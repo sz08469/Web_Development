@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Course Registration Form</title>
+</head>
+<body style="background-color: #dbbde0;">
+  <h1>Course Registration Form</h1>
+
+  <form action="#" method="post">
+    <fieldset>
+      <legend>Student Information</legend>
+
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="student-id">Student ID:</label><br>
+      <input type="text" id="student-id" name="student-id" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="department">Department:</label><br>
+      <select id="department" name="department" required>
+        <option value="">--Select--</option>
+        <option value="cs">Computer Science</option>
+        <option value="ee">Electrical Engineering</option>
+        <option value="me">Mechanical Engineering</option>
+        <option value="bio">Biological Sciences</option>
+      </select><br><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Select Courses</legend>
+      <input type="checkbox" name="course" value="cs101"> CS101 - Intro to Programming<br>
+      <input type="checkbox" name="course" value="math201"> MATH201 - Calculus II<br>
+      <input type="checkbox" name="course" value="phy102"> PHY102 - Mechanics<br>
+      <input type="checkbox" name="course" value="eng103"> ENG103 - Academic Writing<br>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Semester and Mode</legend>
+
+      <label for="semester">Select Semester:</label><br>
+      <select id="semester" name="semester" required>
+        <option value="">--Select--</option>
+        <option value="fall">Fall 2025</option>
+        <option value="spring">Spring 2026</option>
+        <option value="summer">Summer 2026</option>
+      </select><br><br>
+
+      Learning Mode:<br>
+      <input type="radio" id="online" name="mode" value="online" required>
+      <label for="online">Online</label><br>
+
+      <input type="radio" id="in-person" name="mode" value="in-person">
+      <label for="in-person">In-Person</label><br>
+
+      <input type="radio" id="hybrid" name="mode" value="hybrid">
+      <label for="hybrid">Hybrid</label><br>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+  </form>
+</body>
+</html>
